@@ -18,11 +18,13 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { DatePipe } from '@angular/common';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoomlistComponent,
+    LoginComponent, 
     AddroomComponent,
     ChatroomComponent
   ],
