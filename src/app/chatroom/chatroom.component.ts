@@ -86,7 +86,7 @@ export class ChatroomComponent implements OnInit {
     chat.roomname = this.roomname;
     chat.nickname = this.nickname;
     chat.date = this.datepipe.transform(new Date(), 'dd/MM/yyyy HH:mm:ss');
-    chat.message = `${this.nickname} leave the room`;
+    chat.message = `${this.nickname} have just left the room`;
     chat.type = 'exit';
     const newMessage = firebase.database().ref('chats/').push();
     newMessage.set(chat);
